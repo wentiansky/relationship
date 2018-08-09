@@ -1,5 +1,5 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  API_ROOT: '"http://gxl.xssy.work"' // 线上API地址
+  API_ROOT: '"http://192.168.1.34:82"' // 线上API地址
 }

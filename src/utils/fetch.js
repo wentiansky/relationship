@@ -3,7 +3,8 @@ const baseUrl = process.env.API_ROOT;
 export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 	type = type.toUpperCase();
 	url = baseUrl + url;
-
+	console.log(url)
+	
 	// GET方法
 	if (type === 'GET') {
 		let dataStr = ''; // 数据拼接字符串

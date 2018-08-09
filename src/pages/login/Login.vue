@@ -69,7 +69,7 @@
 				}
 
 				// 开始登录（用封装的fetch.js去请求数据）
-				this.res = await login(this.username, this.password);
+				/* this.res = await login(this.username, this.password);
 				let res = this.res;
 				console.log(res);
 				switch(res.status) {
@@ -86,9 +86,9 @@
 						// 进入联系人页面
 						this.$router.push({name: 'Contact'});
 						break;
-				}
+				} */
 
-				/* this.$store.dispatch('login', {
+				this.$store.dispatch('login', {
 					username: this.username,
 					password: this.password
 				}).then(res => {
@@ -105,7 +105,7 @@
 					}
 				}, err => {
 
-				}); */
+				});
 			},
 			/* 跳转注册 */
 			goRegister() {

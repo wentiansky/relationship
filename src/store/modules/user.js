@@ -1,5 +1,6 @@
 /* 用户数据仓库 */
 import axios from 'axios'
+axios.defaults.baseURL = 'http://192.168.1.34:82/api';
 
 const state = {
 	// 注册返回数据
@@ -51,10 +52,9 @@ const actions = {
 	},
 	/* 登录请求 */
 	login( { commit }, payload) {
-		console.log(process.env.API_ROOT);
 		return new Promise((resolve, reject) => {
 			// process.env.API_ROOT + 
-			axios.post(process.env.API_ROOT + '/api/login', payload)
+			axios.post('/api/login', payload)
 			.then(res => {
 				commit('login', res.data);
 				resolve(res.data);

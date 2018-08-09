@@ -11,7 +11,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api': {     //使用"/api"来代替"http://gxl.xssy.work" 
-            target: 'http://gxl.xssy.work/api', //源地址 
+            target: 'http://192.168.1.34:82/api', //源地址 
             secure: false,      // 如果是https接口，需要配置这个参数
             changeOrigin: true, // 如果接口跨域，需要进行这个参数配置
             pathRewrite: { 
